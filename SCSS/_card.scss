@@ -1,0 +1,50 @@
+@mixin card1 {
+  border: none;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card {
+  &.card1 {
+    @include card1;
+    background: #478ac9;
+  }
+
+  &.card2 {
+    @include card1;
+    background: #83b9dc;
+  }
+
+  &.card3 {
+    @include card1;
+    background: #e8b333;
+  }
+}
+
+
+.btn {
+  &.btn1 {
+    background: black;
+    color: white;
+    padding: 10px 40px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
+
+.ct {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
